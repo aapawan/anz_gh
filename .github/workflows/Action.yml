@@ -1,7 +1,7 @@
 name: 5-Actions
 on: 
   workflow_dispatch
-  
+
 jobs:
   my-first-job:
     name: my first job
@@ -11,6 +11,6 @@ jobs:
       - uses: actions/setup-java@v4
         with:
             distribution: 'adopt'
-            java-version: '11'
+            java-version: '17'
       - run: echo "hello world"
       - run: mvn build
